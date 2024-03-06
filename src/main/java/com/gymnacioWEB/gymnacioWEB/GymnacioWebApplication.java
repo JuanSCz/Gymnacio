@@ -5,10 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class GymnacioWebApplication {
-    
-        
-	public static void main(String[] args) {
-		SpringApplication.run(GymnacioWebApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GymnacioWebApplication.class, args);
+    }
 
 }

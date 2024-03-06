@@ -1,0 +1,247 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="@{/fragments/head} :: head">
+        <title>Source Gym</title>
+    </head>
+
+    <body class="body">
+        <nav th:replace="@{/fragments/navbar} :: nav"></nav>
+        
+        <header class="header" id="header">
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1>MEJORA TU CALIDAD DE VIDA</h1>
+                    <p class="texto">
+                        Source es un gimnasio moderno y completo diseñado para satisfacer las necesidades de aquellos que buscan mejorar su fuerza, resistencia y condición física en un solo lugar. Nuestro gimnasio se enorgullece de ofrecer una amplia variedad de equipos y programas diseñados para atender tanto a los amantes de las pesas como a los aficionados al ejercicio aeróbico.
+                    </p>
+                    <a id="contacto" name="contacto" class="btnOrigin btn text-white btn-lg mt-2">
+                        Contacto
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="about-content container">
+                <div class="about-txt">
+                    <span>Source</span>
+                    <h2 class="h2-bienvenido">Bienvenido con nosotros!</h2>
+
+                    <p class="texto">
+                        Ofrecemos una variedad de clases grupales que incluyen spinning, aeróbicos, HIIT, yoga y pilates. Estas clases son ideales para aquellos que prefieren ejercitarse en un entorno social y motivador.
+                    </p>
+                    <p class="texto">
+                        También contamos con una amplia gama de equipos de pesas libres y máquinas de entrenamiento de fuerza de última generación. Desde pesas olímpicas y barras hasta mancuernas, encontrarás todo lo que necesitas para tu entrenamiento de pesas.
+                    </p>
+                </div>
+                <div class="about-img">
+                    <img src="images/e1.jpg" alt="Error al cargar imagen."/>
+                </div>
+            </div>
+        </section>
+
+        <section class="profesores">
+            <span>Source</span>
+            <h2 class="h2-profesores">Los mejores profesores!</h2>
+
+
+            <div class="profesores-content container">
+
+                <div class="profesores-1">
+                    <img class="face" src="images/marcos2.jpg" alt="Error al cargar imagen."/>
+                    <h4>Marcos Sortino</h4>
+                    <p class="texto">
+                        Apasionado de la gimnasia y un verdadero amante de la naturaleza. Ha entrenado a numerosas personas en crossfit y tiene amplios conocimientos en entrenamiento funcional, pesas y aeróbico. Su enfoque se centra en ayudar a sus clientes a alcanzar sus metas de forma segura y efectiva, aprovechando al máximo su potencial físico.
+                    </p>
+                    <div class="redes-sociales">
+                        <a href="#"><img src="images/twitter.png" alt="Twitter"/></a>
+                        <a href="#"><img src="images/facebook.png" alt="Facebook"/></a>
+                        <a href="#"><img src="images/instagram.png" alt="Instagram"/></a>
+                    </div>
+                </div>
+                <div class="profesores-1">
+                    <img class="face" src="images/Samu.jpg" alt="Error al cargar imagen."/>
+                    <h4>Lautaro Rodriguez</h4>
+                    <p class="texto">
+                        Entrenador de funcional con una pasión por el entrenamiento aeróbico y la naturaleza. Ha ayudado a numerosas personas a alcanzar sus objetivos de fitness a través de entrenamientos funcionales, pesas y ejercicios aeróbicos. Su enfoque se basa en la creación de rutinas personalizadas que desafían a sus alumnos a superar obstáculos y mejorar su rendimiento.
+                    </p>
+                    <div class="redes-sociales">
+                        <a href="#"><img src="images/twitter.png" alt="Twitter"/></a>
+                        <a href="#"><img src="images/facebook.png" alt="Facebook"/></a>
+                        <a href="#"><img src="images/instagram.png" alt="Instagram"/></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="plans" id="planes-servicios">
+
+            <span>Source</span>
+            <h2 class="h2-planes">Nuestros Planes</h2>
+
+
+            <div class="plans-content container">
+
+                <div class="plan-1">
+                    <span>2000$</span>
+                    <h3>Plan Basico</h3>
+                    <p class="texto">3 Dias Semanales</p>
+                    <p class="texto">Entrenador</p>
+                    <p class="texto">Acceso 24/7</p>
+                </div>
+
+                <div class="plan-1">
+                    <span>4000$</span>
+                    <h3>Plan Medio</h3>
+                    <p class="texto">5 Dias Semanales</p>
+                    <p class="texto">Entrenador</p>
+                    <p class="texto">Acceso 24/7</p>
+                    <p class="texto">Dieta</p>
+
+                </div>
+
+                <div class="plan-1">
+                    <span>5500$</span>
+                    <h3>Plan Completo</h3>
+                    <p class="texto">6 Dias Semanales</p>
+                    <p class="texto">Clases De Sumba</p>
+                    <p class="texto">Entrenador</p>
+                    <p class="texto">Rutinas Especializadas</p>
+                    <p class="texto">Acceso 24/7</p>
+                    <p class="texto">Dieta</p>
+
+                </div>
+            </div>
+        </main>
+
+        <section class="information">
+
+            <div class="information-content">
+
+                <div class="information-txt">
+                    <span>Source</span>
+                    <h2 class="h2-calculadora">Calcula tu masa</h2>
+
+                    <form>
+                        <input class="input-calculadora" type="text" placeholder="Peso"/>
+                        <input class="input-calculadora" type="text" placeholder="Altura"/>
+                        <input class="input-calculadora" type="text" placeholder="Genero"/>
+                        <a id="calcular" name="calcular" class="btnOrigin btn text-white btn-lg mt-2">
+                            Calcular
+                        </a>
+                    </form>
+                </div>
+                <div class="information-img">
+                    <img src="images/Imagen.jpeg" alt="esta."/>
+                </div>
+            </div>
+
+            <div class="information-content">
+                <div class="information-img">
+                    <img src="images/imagen4.jpg" alt="Error al cargar la imagen"/>
+                </div>
+                <div class="information-txt">
+                    <span>Source</span>
+                    <h2 class="h2-servicios">Nuestros servicios</h2>
+                    <div class="service">
+                        <img src="images/001-ejercicio.png" alt="Error al cargar la imagen"/>
+                        <h3>
+                            Ofrecemos un programa de entrenamiento funcional y cardio diseñado para mejorar tu resistencia, fuerza y flexibilidad.
+                        </h3>
+                    </div>
+                    <div class="service">
+                        <img src="images/001-levantamiento-de-pesas.png" alt="Error al cargar la imagen"/>
+                        <h3>
+                            Aumentar tu masa muscular y lograr una mayor definición, rutinas diseñadas para estimular el crecimiento muscular.
+                        </h3>
+                    </div>
+                    <div class="service">
+                        <img src="images/003-latido-del-corazn.png" alt="Error al cargar la imagen"/>
+                        <h3>
+                            Rutinas especializadas y personalizadas para satisfacer las necesidades únicas de cada persona.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <span>Source</span>
+            <h2 class="h2-noticias">Nuestras Noticias</h2>
+
+
+            <div class="blog-content container">
+
+                <div class="blog-1">
+                    <img src="images/b1.jpg" alt="Error al cargar la imagen"/>
+                    <div class="blog-txt">
+                        <span>Source</span>
+                        <h3>Los cinco principales beneficios del entrenamiento funcional</h3>
+                        <p class="texto">
+                            El entrenamiento funcional va ganando cada vez más adeptos en los gimnasios. Se trata de una forma de actividad física que, basándose en ejercicios cortos y de gran impacto para la salud...
+                        </p>
+                        <a href="#" class="home-link">Leer mas...</a>
+                    </div>
+                </div>
+
+                <div class="blog-1">
+                    <img src="images/b2.jpg" alt=""/>
+                    <div class="blog-txt">
+                        <span>Source</span>
+                        <h3>Que es la Hipertrofia y como se consigue?</h3>
+                        <p class="texto">
+                            La hipertrofia muscular, denominada comúnmente solo como hipertrofia, es el crecimiento del músculo. Se trata de un aumento del tamaño, del número o de ambas...
+                        </p>
+                        <a href="#" class="home-link">Leer mas...</a>
+                    </div>
+                </div>
+
+                <div class="blog-1">
+                    <img src="images/b3.jpg" alt=""/>
+                    <div class="blog-txt">
+                        <span>Source</span>
+                        <h3>La diferencia entre ejercicio aeróbico y anaeróbico.</h3>
+                        <p class="texto">
+                            El ejercicio regular ha demostrado ser beneficioso tanto para el cuerpo como para la mente, así como para reducir el riesgo de diversas enfermedades. Es beneficioso para...
+                        </p>
+                        <a href="#" class="home-link">Leer mas...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+
+            <div class="contact-content container">
+                <span>Source</span>
+                <h2 class="h2-telefono">+2474440215</h2>
+                <p class="texto-contacto">
+                    No dudes en comunicarte con nosotros si tienes alguna duda o consulta.</p>
+                <p class="texto-contacto">Estamos aqui para ayudarte y tu comodidad
+                    es nuestra prioridad.</p>
+                <p class="texto-contacto"> Puedes contactarnos en cualquier momento y te brindaremos toda la
+                    asistencia que necesites.</p>
+
+                <a id="Contacto" name="contacto" class="btnOrigin btn text-white btn-lg mt-2">
+                    Contacto
+                </a>
+            </div>
+        </section>
+
+        <section class="mapa">
+            <span>Source</span>
+            <h2 class="h2-encontrarnos">Donde puedes encontrarnos?</h2>
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.2095972279953!2d-60.2539877233545!3d-34.294202441219696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b91283d448b049%3A0x700942e9c4aed093!2sAv.%20Bme.%20Mitre%20582%2C%20Salto%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1695747639145!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <footer th:replace="@{/fragments/footer} :: footer"></footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
