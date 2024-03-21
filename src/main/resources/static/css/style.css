@@ -613,7 +613,6 @@ input::placeholder {
         background-color: #191A1F;
         position: relative;
         padding-bottom: 56.25%;
-        /* Proporción de aspecto 16:9 */
         height: 0;
         overflow: hidden;
     }
